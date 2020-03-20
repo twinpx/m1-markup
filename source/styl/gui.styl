@@ -1,0 +1,258 @@
+html,
+body
+  min-height 100vh
+
+body
+  background #fff
+  font-family 'Montserrat', sans-serif
+  
+  h1,
+  .b-h1
+    font-size 34pt
+    font-weight bold
+    line-height 1.3
+    
+    @media( max-width 600px )
+      font-size 24pt
+      
+  h2,
+  .b-h2
+    font-size 22pt
+    font-weight bold
+    line-height 1.3
+    
+    &:first-child
+      margin-top 0
+      
+  h3,
+  .b-h3
+    font-size 13pt
+    font-weight bold
+    line-height 1.3
+    
+    &:first-child
+      margin-top 0
+      
+  a
+    color #ff3333
+    
+    &:hover
+      opacity .7
+      
+  p
+    margin-top 0
+    
+  hr
+    border none
+    margin 0
+    padding 20px 0
+    height 1px
+    
+    &.i-size-S
+      padding 10px 0
+    
+    &.i-size-M
+      padding 15px 0
+    
+    &.i-size-L
+      padding 30px 0
+    
+    &.i-size-XL
+      padding 40px 0
+    
+  .row
+    margin-bottom 0
+    margin-left -.75rem
+    margin-right -.75rem
+    
+  .text-middle
+    font-size 18pt
+    
+  .text-large
+    font-size 21pt
+    
+  .b-double-line-height
+    line-height 2.2
+    
+  //Form
+  .input-field
+    margin 0 0 35px
+    
+  label,
+  .input-field>label
+    color #333
+
+  [type="checkbox"]:checked+span:not(.lever):before
+    border-right-color #fe4849
+    border-bottom-color #fe4849
+    
+  input:not([type]),
+  input[type=text]:not(.browser-default),
+  input[type=password]:not(.browser-default),
+  input[type=email]:not(.browser-default),
+  input[type=url]:not(.browser-default),
+  input[type=time]:not(.browser-default),
+  input[type=date]:not(.browser-default),
+  input[type=datetime]:not(.browser-default),
+  input[type=datetime-local]:not(.browser-default),
+  input[type=tel]:not(.browser-default),
+  input[type=number]:not(.browser-default),
+  input[type=search]:not(.browser-default),
+  textarea.materialize-textarea
+    border-bottom 1px solid #333
+    
+  input:not([type]):focus:not([readonly]),
+  input[type=text]:not(.browser-default):focus:not([readonly]),
+  input[type=password]:not(.browser-default):focus:not([readonly]),
+  input[type=email]:not(.browser-default):focus:not([readonly]),
+  input[type=url]:not(.browser-default):focus:not([readonly]),
+  input[type=time]:not(.browser-default):focus:not([readonly]),
+  input[type=date]:not(.browser-default):focus:not([readonly]),
+  input[type=datetime]:not(.browser-default):focus:not([readonly]),
+  input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
+  input[type=tel]:not(.browser-default):focus:not([readonly]),
+  input[type=number]:not(.browser-default):focus:not([readonly]),
+  input[type=search]:not(.browser-default):focus:not([readonly]),
+  textarea.materialize-textarea:focus:not([readonly])
+    border-bottom 1px solid #fe4849
+    box-shadow none
+    
+  input:not([type]):focus:not([readonly])+label,
+  input[type=text]:not(.browser-default):focus:not([readonly])+label,
+  input[type=password]:not(.browser-default):focus:not([readonly])+label,
+  input[type=email]:not(.browser-default):focus:not([readonly])+label,
+  input[type=url]:not(.browser-default):focus:not([readonly])+label,
+  input[type=time]:not(.browser-default):focus:not([readonly])+label,
+  input[type=date]:not(.browser-default):focus:not([readonly])+label,
+  input[type=datetime]:not(.browser-default):focus:not([readonly])+label,
+  input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label,
+  input[type=tel]:not(.browser-default):focus:not([readonly])+label,
+  input[type=number]:not(.browser-default):focus:not([readonly])+label,
+  input[type=search]:not(.browser-default):focus:not([readonly])+label,
+  textarea.materialize-textarea:focus:not([readonly])+label
+    color #fe4849
+  
+  button
+    
+    &,
+    &:focus
+      background-color transparent
+  
+.b-gray-section
+  background-color #f5f7f9
+  
+section
+  padding-top 55px
+  padding-bottom 55px
+
+.b-btn
+  text-transform uppercase
+  line-height 82px
+  color #ff3333
+  border 4px solid #fe4849
+  display inline-block
+  text-align center
+  min-width 255px
+  padding 0 20px
+  cursor pointer
+  font-weight bold
+  
+  @media( max-width 992px )
+    min-width auto
+  
+  @media( max-width 600px )
+    width 100%
+    min-width 0
+    
+.b-form-buttons
+  
+  .b-btn
+  
+    @media( min-width 701px )
+      margin-right 42px
+  
+    @media( min-width 601px ) and ( max-width 700px )
+      margin-right 5px
+    
+.b-about-info
+  display flex
+  justify-content flex-start
+  align-items center
+  flex-wrap wrap
+  line-height 1.7
+
+  &__item
+    width 50%
+    margin-bottom 65px
+    
+    &.i-100
+      width 100%
+    
+    @media( max-width 600px )
+      margin-bottom 30px
+    
+    b
+      font-size 17pt
+      line-height 1
+      
+      #banks &
+        font-size 34pt
+        line-height 1
+      
+    div
+      font-size 12pt
+      line-height 1.2
+      
+#map,
+#BX_YMAP_yam_1
+  width 100%
+  height 565px !important
+  
+  @media( max-width 600px)
+    height 300px !important
+    
+.b-location
+
+  &-info
+    font-size 9pt
+    
+  &-ymaps
+    display flex
+    justify-content left
+    align-items center
+  
+    &-icon
+      width 52px
+      height 51px
+      background-repeat no-repeat
+      background-position center
+      background-size cover
+      margin-right 11px
+    
+  &-ytaxi
+    display flex
+    justify-content left
+    align-items center
+  
+    &-icon
+      width 50px
+      height 50px
+      background-repeat no-repeat
+      background-position center
+      background-size cover
+      margin-right 11px
+      
+.b-banks-logo
+  img
+    width 100%
+    height auto
+    vertical-align top
+    
+.b-contacts
+
+  img
+    width 100%
+    height auto
+    
+.b-img-100
+  width 100%

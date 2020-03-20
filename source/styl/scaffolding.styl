@@ -1,0 +1,92 @@
+.b-header
+  position fixed
+  top 0
+  left 0
+  width 100%
+  height 120px
+  padding-top 28px
+  padding-bottom 35px
+  background-color #fff
+  color #333
+  z-index 100
+  
+  @media( max-width 600px )
+    padding-top 25px
+    padding-bottom 25px
+    height 90px
+  
+  a, a:hover
+    color #333
+  
+  .container
+    display flex
+    align-items center
+    justify-content space-between
+    
+  &-menu-block
+    font-weight bold
+    
+  &-top-menu
+    font-size 12pt
+    margin 0 0 13px
+    
+    li
+      display inline-block
+      margin-left 48px
+      
+  & a&-phone
+    font-size 12pt
+    color #fe0e0e
+    text-align right
+          
+  &-nav.b-menu-icon
+    cursor pointer
+        
+  .b-header-logo
+    padding-top 6px
+  
+    img
+      vertical-align top
+      width 101px
+      height 51px
+      
+      @media( max-width 600px )
+        width 72px
+        height 37px
+      
+.b-menu-icon
+  display none
+  vertical-align top
+  width 32px
+  height 32px
+  background embedurl( 'img/menu.svg' ) no-repeat center center
+  background-size cover
+  
+  @media( max-width 600px )
+    display inline-block
+  
+#slide-out
+  padding-top 25px
+  font-weight bold
+  
+  &.sidenav li>a
+    font-weight bold
+  
+  a[ href^=tel ]
+    color #fe0e0e
+    
+.b-page
+  padding-top 120px
+  min-height calc( 100vh - 80px )
+  
+  @media( max-width 600px )
+    padding-top 90px
+    
+.b-footer
+  font-size 9pt
+  height 75px
+  padding-top 30px
+  
+  .row
+    margin-right -0.75rem
+    margin-left -0.75rem

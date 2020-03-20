@@ -1,0 +1,97 @@
+﻿// start /components/filter/
+
+link( rel="stylesheet", href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" )
+link( rel="stylesheet", href="/template/plugin/jquery-ui.theme.min.css" )
+script( src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" )
+script( src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js" )
+
+link( rel="stylesheet", href="/components/filter/style.css" )
+script( src="/components/filter/script.js" )
+
+style
+  | .b-filter {
+  |   padding: 50px 0;
+  | }
+
+.b-filter
+  
+  .row
+    .col.xl3.l4.m4.s12
+    
+      #filter-btn
+        span.i-show Использовать фильтр
+        span Свернуть фильтр
+        i( style="background-image: url( '/upload/icons/filter.svg' );" )
+  
+      #filter
+          
+        label Этаж
+        .b-filter__wrapper
+          #filter-floors
+        p
+        label Комнат
+        .b-filter__wrapper
+          #filter-rooms
+        p
+        label Площадь(м²)
+        .b-filter__wrapper
+          #filter-square
+        p
+        label Стоимость
+        #filter-price-value
+        .b-filter__wrapper
+          #filter-price
+        p
+        #filter-reset Сбросить параметры
+        
+    hr.i-size-L.show-on-small.hide-on-med-and-up.clearfix
+        
+    .col.xl9.l8.m8.s12
+  
+      table
+        
+        thead
+          tr
+            th Этаж<br>этажность
+            th Площадь
+            th Комнат
+            th Цена
+            th
+            
+        tbody( data-orderlink="/form/?id=" data-json="/components/filter/filter.json" data-method="GET" )
+              
+
+//-#modal1.modal
+  .modal-content
+    .b-flat-modal
+    
+      .b-flat-modal__img
+        img( src="http:\/\/176.99.9.106\/sites\/default\/files\/shater1571463_636290.jpg" alt="" )
+        
+      .b-flat-modal__text.left-align
+        b Номер квартиры:&nbsp;
+        | Б15
+        br
+        b Корпус:&nbsp;
+        | Б
+        br
+        b Секция:&nbsp;
+        | 1
+        br
+        b Этаж:&nbsp;
+        | 4
+        br
+        b Площадь:&nbsp;
+        | 241.5 м²
+
+        .b-flat-modal__price 2 456 800 руб
+        
+        .b-flat-modal__btn
+          a.btn.btn-large( href="" ) Отправить заявку
+        
+        .b-flat-modal__close
+          a.modal-close( href="#!" ) Вернуться к списку
+          
+    .modal-content__close.modal-close( style="background-image: url( '/upload/icons/error.svg' );" )
+
+// end /components/filter/

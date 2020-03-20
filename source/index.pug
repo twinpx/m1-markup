@@ -1,0 +1,147 @@
+extends ./layouts/main
+
+block title
+  title Main page | m1
+
+block content
+
+  .b-gray-section
+    .container
+      section#topGallery
+        include ./components/top-gallery/template
+      
+      section#about
+      
+        .row
+          .col.s12.m10.push-m1
+            h2 О комплексе
+            hr            
+            include ./modules/tabs/about
+            
+  .container
+    section#location
+    
+      .row
+        .col.m10.push-m1
+          h2 Расположение
+          
+          .row.b-location-info
+            .col.m8.l4.xl5 Московская область, Одинцовский район,<br>городское поселение Новоивановское, улица Западная.
+            hr.show-on-small.hide-on-med-and-up.clearfix.i-size-S
+            .col.m2.l4.xl4.b-location-ymaps
+              a.b-location-ymaps-icon( href="" target="_blank" style="background-image: url( '/template/images/ymaps-icon.png' );" )
+              a.hide-on-med-and-down( href="" target="_blank" ) Проложить маршрут<br>в Яндекс навигатор
+            .col.m2.l4.xl3.b-location-ytaxi
+              a.b-location-ytaxi-icon( href="" target="_blank" style="background-image: url( '/template/images/yandex-taxi-icon.png' );" )
+              a.hide-on-med-and-down( href="" target="_blank" ) Вызвать<br>Яндекс такси
+            
+      hr
+          
+      script( src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript" )
+      script
+        |$( function() {
+        |  if ( window.ymaps ) {
+        |    ymaps.ready( function init(){
+        |      var myMap = new ymaps.Map("map", {
+        |        center: [55.812752, 37.647549],
+        |        controls: ["zoomControl"],
+        |        zoom: 17
+        |      });
+        |    
+        |      var myPlacemark = new ymaps.Placemark([55.812752, 37.647549],{}, {
+        |        iconLayout: 'default#image',
+        |        iconImageHref: 'http://m1-markup.2px.ru//upload/contacts/placemark-m1.gif',
+        |        iconImageSize: [69, 69],
+        |        iconImageOffset: [-35, -35]
+        |      });
+        |      
+        |      myMap.geoObjects.add(myPlacemark);
+        |      
+        |      myMap.behaviors.disable('scrollZoom');
+        |    });
+        |  }
+        |});
+        
+      #map
+      
+  .b-gray-section
+    
+    .container
+      section#process
+      
+        .row
+          .col.m10.push-m1
+            h2 Ход строительства
+        
+        .fotorama.hide-on-small-only( data-width="100%" data-arrows="false" data-swipe="true" data-ratio="3.65" data-loop="true" )
+          div
+            include ./modules/photo-card/include
+          div
+            include ./modules/photo-card/include
+          div
+            include ./modules/photo-card/include
+          div
+            include ./modules/photo-card/include
+        
+        .fotorama.hide-on-med-and-up( data-width="100%" data-arrows="false" data-swipe="true" data-ratio=".85" data-loop="true" )
+          div
+            include ./modules/photo-card/include-single
+          div
+            include ./modules/photo-card/include-single
+          div
+            include ./modules/photo-card/include-single
+          div
+            include ./modules/photo-card/include-single
+            
+  .container
+    section#price
+    
+      .row
+        .col.m10.push-m1
+          h2 Планировки и цены
+          
+      include ./components/filter/template
+          
+  .b-gray-section
+    
+    .container
+      section#banks
+      
+        .row
+          .col.m10.push-m1
+            h2 Условия реализации
+            
+        hr            
+        include ./modules/tabs/banks
+              
+        hr.i-size-L
+              
+        .b-banks-button.center-align
+          a.b-btn( href="" ) Отправить заявку
+              
+      section#contacts
+      
+        .row
+          .col.m10.push-m1
+      
+            h2 Контакты
+            
+            .row
+              .col.m6.b-contacts
+                img( src="/upload/contacts/1.png" alt="Becar" )
+                h3 Адрес офиса продаж 
+                p Московская область, Одинцовский район, Новоивановское, улица Западная, дом 2.
+                b.text-large +7 (499) 390 31 31
+              hr.show-on-small.hide-on-med-and-up.clearfix
+              .col.m6.b-contacts
+                img( src="/upload/contacts/2.png" alt="Mgroup" )
+                h3 Застройщик M1 Group
+                p ООО «М1 Девелопмент»<br>ОГРН 1165032054648<br>ИНН 5032238848
+                      
+      section#docs
+      
+        .row
+          .col.m10.push-m1
+      
+            h3 Документы
+            include ./modules/doc/include

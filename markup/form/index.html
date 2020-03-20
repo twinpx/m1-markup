@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form | m1</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/template/template_styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;amp;subset=cyrillic">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="/template/script.js"></script>
+  </head>
+  <body>
+    <header class="b-header">
+      <div class="container"><a class="b-header-logo" href="/"><img src="/template/images/logo-m1-hotel.png" width="79" height="51" alt="M1 Hotel"></a>
+        <div class="b-header-menu-block text-right">
+          <ul class="unstyled b-header-top-menu hide-on-med-and-down text-right">
+            <li><a href="/#about">О комплексе</a></li>
+            <li><a href="/#price">Планировки и цены</a></li>
+            <li><a href="/#contacts">Контакты</a></li>
+          </ul><a class="b-header-phone hide-on-med-and-down right" href="tel:+74993903131">+7(499)390-31-31</a>
+          <div class="sidenav-trigger b-header-nav b-menu-icon right show-on-small show-on-medium" data-target="slide-out"></div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </header>
+    <ul class="sidenav unstyled" id="slide-out">
+      <li><a href="/#about">О комплексе</a></li>
+      <li><a href="/#price">Планировки и цены</a></li>
+      <li><a href="/#contacts">Контакты</a></li>
+      <li><a href="tel:+74993903131">+7(499)390-31-31</a></li>
+    </ul>
+    <div class="b-page">
+      <div class="b-gray-section">
+        <div class="container">
+          <section>
+            <div class="row">
+              <div class="col s12 m10 push-m1">
+                <h1 class="b-h2">Отправить заявку</h1>
+                <hr class="i-size-S">
+                <form action="" method="">
+                  <div class="input-field">
+                    <input class="validate" id="first_name" name="first_name" type="text" required>
+                    <label for="first_name">Имя</label>
+                  </div>
+                  <div class="input-field">
+                    <input class="validate" id="phone" name="phone" type="tel" required>
+                    <label for="phone">Номер телефона</label>
+                  </div>
+                  <div class="input-field">
+                    <input class="validate" id="email" name="email" type="email">
+                    <label for="email">Email</label>
+                  </div>
+                  <hr class="i-size-S">
+                  <div>
+                    <label>
+                      <input type="checkbox" checked="checked" name="agreement"><span>Я согласен на обработку персональных данных. <a href="/legacy/">Соглашение на обработку персональных данных</a>.</span>
+                    </label>
+                  </div>
+                  <hr class="i-size-L">
+                  <div class="b-form-buttons">
+                    <button class="b-btn" type="submit">Отправить заявку</button>
+                    <hr class="hide-on-med-and-up"><a href="/">Отменить и вернуться на главную.</a>
+                  </div>
+                  <hr>
+                </form>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <footer class="b-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m10 push-m1">&copy; 2019  ООО «М1 Девелопмент».  </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

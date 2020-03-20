@@ -1,0 +1,19 @@
+clearfix()
+  &:before
+  &:after
+    content: ""
+    display: table
+  &:after
+    clear: both
+
+transition( val )
+  transition val
+  -webkit-transition val
+  -moz-transition val
+  -ms-transition val
+
+transform( val )
+  transform val
+  -webkit-transform val
+  -moz-transform val
+  -ms-transform val

@@ -1,0 +1,30 @@
+@import '../../styl/component-include.styl'
+
+.b-tabs
+  
+  &__nav
+    margin-bottom 52px
+    
+    a
+      margin-right 45px
+      font-size 12pt
+      font-weight bold
+      
+      &:last-child
+        margin-right 0
+        
+      &.i-active
+        color #333
+        cursor default
+        pointer-events none
+        
+  &__item
+    font-size 13.5pt
+    line-height 1.7
+    transform( translateX(100px))
+    opacity 0
+    transition( all .5s ease-in )
+    
+    &.i-active
+      transform( translateX(0))
+      opacity 1

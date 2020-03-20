@@ -1,0 +1,31 @@
+@import '../../styl/component-include.styl'
+
+#yMap
+  height 611px
+  
+.b-map__nav
+  margin-bottom 20px
+  
+  &-item
+    display inline-block
+    line-height 40px
+    height 40px
+    padding 0 15px
+    font-size 10.5pt
+    background-color #f2f2f2
+    cursor pointer
+    margin 0 6px 6px 0
+    
+    &:hover
+      opacity .7
+    
+    &.i-active
+      background-color #666666
+      color #fff
+      cursor default
+      
+      &:hover
+        opacity 1
+        
+    @media( max-width 570px )
+      padding 0 10px

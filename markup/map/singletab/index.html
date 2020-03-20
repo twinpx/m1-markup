@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Map singletab</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;amp;subset=cyrillic">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  </head>
+  <body>
+    <section class="container">
+      <h1>Map object</h1>
+      <!-- start /components/map/-->
+      <link rel="stylesheet" href="/components/map/style.css">
+      <script src="/components/map/script.js"></script>
+      <div class="b-map" data-singletab="true">
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;amp;apikey=1ac0f649-71bc-46a0-81e9-aa38258cf982" type="text/javascript"></script>
+        <div class="b-map__nav">
+          <div class="b-map__nav-item i-active" data-tab="kindergartens">Детские сады</div>
+          <div class="b-map__nav-item i-active" data-tab="museums">Музеи</div>
+          <div class="b-map__nav-item i-active">Клиники</div>
+          <div class="b-map__nav-item i-active">Парки</div>
+        </div>
+        <script>
+           var yMapPlacemarks = { kindergartens: [ { coords: [ 55.751572, 37.573855 ], icon:  '/template/images/map-theater.png' }, { coords: [ 55.741570, 37.573854 ], icon:  '/template/images/map-theater.png' } ], museums: [ { coords: [ 55.781571, 37.573856 ], icon:  '/template/images/map-theater.png' }, { coords: [ 55.781573, 37.513853 ], icon:  '/template/images/map-theater.png' } ] };</script>
+        <div id="yMap"></div>
+      </div>
+      <!-- end /components/map/-->
+    </section>
+  </body>
+</html>

@@ -1,0 +1,263 @@
+@import '../../styl/component-include.styl'
+
+#filter-section
+  display none
+
+#filter
+  background-color #f7f7f7
+  padding 38px 15px
+  height 540px
+  
+  @media( max-width 600px )
+    display none
+  
+  &-btn
+    height 49px
+    width 100%
+    background-color #f7f7f7
+    position relative
+    cursor pointer
+    display none
+  
+    @media( max-width 600px )
+      display block
+  
+    i
+      background-repeat no-repeat
+      background-position right top
+      width 24px
+      height 24px
+      display block
+      position absolute
+      top 14px
+      right 17px
+    
+    span
+      display none
+      line-height 49px
+      padding-left 12px
+      color #666666
+      
+      &.i-show
+        display inline-block
+    
+  
+  label
+    font-size 7pt
+    font-weight bold
+    text-transform uppercase
+    padding-bottom 10px
+    margin-bottom 40px
+    border-bottom 1px solid #fff
+    display block
+    color #333333
+    text-align center
+    
+  .ui-widget
+    font-family "Akrobat", "Open Sans Condensed", Arial, sans-serif
+    
+  .ui-widget.ui-widget-content
+    height 7px
+    background-color #f5b2b2
+    border-radius 0
+    border none
+    
+  .ui-state-default,
+  .ui-widget-content .ui-state-default,
+  .ui-widget-header .ui-state-default,
+  .ui-button,
+  html & .ui-button.ui-state-disabled:hover,
+  html & .ui-button.ui-state-disabled:active
+    width 15px
+    height 21px
+    background-color #ff3333
+    top -7px
+    margin-left -7px
+    border none
+    border-radius 0
+    
+    &:focus
+      outline none
+    
+  .ui-slider .ui-slider-range
+    background-color #ff3333
+    height 7px
+    
+  .ui-slider-handle
+    
+    span
+      position absolute
+      bottom 30px
+      left 0
+      font-size 8pt
+      width 15px
+      text-align center
+      
+  .ui-state-active,
+  .ui-widget-content .ui-state-active,
+  .ui-widget-header .ui-state-active,
+  a.ui-button:active,
+  .ui-button:active,
+  .ui-button.ui-state-active:hover
+    color #333
+    
+.b-filter__wrapper
+  margin-bottom 35px
+  height 7px
+  background-color #f5b2b2
+  border-radius 4px
+  border none
+  padding 0 7px
+  
+#filter-price-value
+  font-size 9pt
+  margin -32px 0 17px
+
+#filter-reset
+  font-size 8pt
+  cursor pointer
+  margin-top 50px
+  text-align center
+  color #ff3333
+  
+.b-filter
+  
+  th
+    font-size 8pt
+    text-transform uppercase
+    font-weight bold
+    text-align center
+    padding-bottom 19px
+    line-height 1.2
+    
+    @media( max-width 1200px )
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3)
+        display inline-block
+        width 33.3%
+        
+      &:nth-child(4),
+      &:nth-child(5)
+        display none
+    
+  tbody
+    
+    tr
+      height 65px
+      border-bottom-color #c7c7bb
+      cursor pointer
+      
+      &.i-action
+        color #cc0000
+        
+      @media( max-width 1200px )
+        display block
+        height auto
+        padding-top 15px
+      
+    td
+      vertical-align middle
+      text-align center
+      font-size 11pt
+      width 16%
+      line-height 1.1
+      
+      @media( max-width 1200px )
+        
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3)
+          display inline-block
+          width 33.3%
+          
+        &:nth-child(4)
+          padding-top 10px
+          padding-bottom 0
+          font-size 14pt
+          
+        &:nth-child(4),
+        &:nth-child(5)
+          display block
+          width 100%
+          margin-bottom 15px
+          text-align center
+      
+    small
+      font-size 7pt
+      
+    a.btn:hover,
+    a.btn:focus
+      color #fff
+      text-decoration none
+      
+  .col.xl9
+    //max-height calc(100vh - 300px)
+    height 540px
+    overflow auto
+    
+  .btn, .btn-large, .btn-small
+    background-color #ff6600
+    letter-spacing 0
+    box-shadow none
+    font-size 7pt
+  
+.b-flat-modal
+  display flex
+  background-color #f3f3f3
+  
+  @media( max-width 600px )
+    display block
+  
+  &__img
+    width 45%
+    background-color #fff
+    display flex
+    align-items center
+    
+    img
+      max-width 100%
+      
+    @media( max-width 600px )
+      width auto
+      padding 30px
+    
+  &__text
+    width 55%
+    font-size 13.5pt
+    padding 55px 125px 35px
+    line-height 1.75
+  
+    @media( min-width 601px) and ( max-width 992px )
+      padding 40px 30px
+  
+    @media( min-width 993px) and ( max-width 1600px )
+      padding-left 50px
+      padding-right 50px
+      
+    @media( max-width 600px )
+      width auto
+      padding 30px
+    
+  &__price
+    font-size 26pt
+    margin 35px 0 32px
+    
+  &__btn
+    margin-bottom 30px
+    
+  .btn
+  
+    &:hover,
+    &:focus
+      text-decoration none
+      color #fff
+    
+  &__close
+    font-size 7pt
+    
+  .b-doc
+    padding-top 8px
+    margin-bottom 20px
+  
+  

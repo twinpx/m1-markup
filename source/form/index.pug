@@ -1,0 +1,47 @@
+extends ../layouts/main
+
+block title
+  title Form | m1
+
+block content
+
+  .b-gray-section
+    .container
+      
+      section
+      
+        .row
+          .col.s12.m10.push-m1
+            h1.b-h2 Отправить заявку
+            hr.i-size-S
+            
+            form( action="" method="" )
+              .input-field
+                input#first_name.validate( name="first_name" type='text' required )
+                label(for='first_name') Имя
+                
+              .input-field
+                input#phone.validate( name="phone" type='tel' required )
+                label(for='phone') Номер телефона
+                
+              .input-field
+                input#email.validate( name="email" type='email' )
+                label(for='email') Email
+                
+              hr.i-size-S
+                
+              div
+                label
+                  input( type="checkbox" checked="checked" name="agreement" )
+                  span Я согласен на обработку персональных данных. <a href="/legacy/">Соглашение на обработку персональных данных</a>.
+                  
+              hr.i-size-L
+              
+              .b-form-buttons
+                button.b-btn( type="submit" ) Отправить заявку
+                hr.hide-on-med-and-up
+                a( href="/" ) Отменить и вернуться на главную.
+                
+              hr
+                  
+              

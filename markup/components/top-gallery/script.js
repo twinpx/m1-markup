@@ -1,0 +1,1 @@
+!function(a){"use strict";a(function(){window.matchMedia("( max-width: 600px )").matches&&a(".b-top-gallery .fotorama").data("fotorama").resize({height:473}),a(".b-top-gallery__item .b-btn").click(function(t){t.preventDefault(),t.stopPropagation(),a.scrollTo("about")})})}(jQuery);

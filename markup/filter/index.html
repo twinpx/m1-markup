@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Filter</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;amp;subset=cyrillic">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  </head>
+  <body>
+    <section class="container">
+      <!-- start /components/filter/-->
+      <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+      <link rel="stylesheet" href="/template/plugin/jquery-ui.theme.min.css">
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+      <link rel="stylesheet" href="/components/filter/style.css">
+      <script src="/components/filter/script.js"></script>
+      <style>
+        .b-filter {
+          padding: 50px 0;
+        }
+      </style>
+      <div class="b-filter">
+        <div class="row">
+          <div class="col xl3 l4 m4 s12">
+            <div id="filter-btn"><span class="i-show">Использовать фильтр</span><span>Свернуть фильтр</span><i style="background-image: url( '/upload/icons/filter.svg' );"></i></div>
+            <div id="filter">
+              <label>Этаж</label>
+              <div class="b-filter__wrapper">
+                <div id="filter-floors"></div>
+              </div>
+              <p></p>
+              <label>Комнат</label>
+              <div class="b-filter__wrapper">
+                <div id="filter-rooms"></div>
+              </div>
+              <p></p>
+              <label>Площадь(м²)</label>
+              <div class="b-filter__wrapper">
+                <div id="filter-square"></div>
+              </div>
+              <p></p>
+              <label>Стоимость</label>
+              <div id="filter-price-value"></div>
+              <div class="b-filter__wrapper">
+                <div id="filter-price"></div>
+              </div>
+              <p></p>
+              <div id="filter-reset">Сбросить параметры</div>
+            </div>
+          </div>
+          <hr class="i-size-L show-on-small hide-on-med-and-up clearfix">
+          <div class="col xl9 l8 m8 s12">
+            <table>
+              <thead>
+                <tr>
+                  <th>Этаж<br>этажность</th>
+                  <th>Площадь</th>
+                  <th>Комнат</th>
+                  <th>Цена</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody data-orderlink="/form/?id=" data-json="/components/filter/filter.json" data-method="GET"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- end /components/filter/-->
+    </section>
+  </body>
+</html>
