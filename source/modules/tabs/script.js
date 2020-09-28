@@ -4,6 +4,8 @@ $( '.b-tabs' ).each( function() {
       $content = $tabs.find( '.b-tabs__content' ),
       $items = $tabs.find( '.b-tabs__item' );
       
+  $content.find( '.b-tabs__item:not( .i-active )' ).hide();
+      
   $nav.delegate( 'a', 'click', function(e) {
     e.preventDefault();
     var $a = $( this );

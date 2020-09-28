@@ -22,3 +22,5 @@ $( '#slide-out a' ).click( function(e) {
     return;
   }
 });
+
+$( '.b-filter .col.xl9' ).niceScroll();

@@ -5,10 +5,19 @@
   &__nav
     margin-bottom 52px
     
+    @media( max-width 767px )
+      display flex
+      justify-content space-between
+    
     a
       margin-right 45px
       font-size 12pt
       font-weight bold
+      white-space nowrap
+      
+      @media( max-width 767px )
+        font-size 8pt
+        margin-right 0
       
       &:last-child
         margin-right 0
