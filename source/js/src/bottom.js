@@ -3,7 +3,12 @@
 
 }( jQuery ));
 
-$(document).ready(function () {	
+$(document).ready(function () {
+  
+  if ( !document.getElementById( 'summary-pay' )) {
+    return;
+  }
+  
 	var $summarypay = $('#summary-pay');	
 	var $summarypercent = $('#summary-percent');	
 	var priceformatRegex = new RegExp("(\\d)(?=(\\d\\d\\d)+([^\\d]|$))", 'g');	

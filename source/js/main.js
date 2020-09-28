@@ -1,3 +1,8 @@
+//placeholder
+setTimeout( function() {
+  $( '.b-ph-block' ).addClass( 'i-ph-animated' );
+}, 500 );
+
 //sideNav
 $( "#slide-out" ).sidenav();
 

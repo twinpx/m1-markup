@@ -1,0 +1,33 @@
+// start /components/news/
+
+link( rel="stylesheet", href="/components/news/style.css" )
+script( src="/components/news/script.js" )
+
+section#news( itemscope itemtype="https://schema.org/ItemList https://schema.org/CreativeWork" )
+
+  h2( itemprop="name" ) Новости
+  
+  .b-ph-block
+  
+    .b-ph
+      
+      .b-ph-news
+        .b-ph-news-item
+        .b-ph-news-item
+        .b-ph-news-item
+        .b-ph-news-item
+        .b-ph-news-item
+        .b-ph-news-item
+        
+    .b-ph-content
+    
+      .b-news-block
+      
+          include ./news
+          include ./news
+          include ./news
+          include ./news
+          include ./news
+          include ./news        
+
+// end /components/news/
