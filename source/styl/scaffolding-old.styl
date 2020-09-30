@@ -3,9 +3,9 @@
   top 0
   left 0
   width 100%
-  height 98px
-  padding-top 30px
-  padding-bottom 30px
+  height 120px
+  padding-top 28px
+  padding-bottom 35px
   background-color #fff
   color #333
   z-index 100
@@ -13,7 +13,7 @@
   @media( max-width 600px )
     padding-top 25px
     padding-bottom 25px
-    height 81px
+    height 90px
   
   a, a:hover
     color #333
@@ -23,83 +23,47 @@
     align-items center
     justify-content space-between
     
-  &-menu
+  &-menu-block
     font-weight bold
-    display none
-    
-    @media( min-width 1450px )
-      display block
-    
-  &-contacts
-    font-weight bold
-    display flex
-    justify-content space-between
-    align-items center
     
   &-top-menu
     font-size 12pt
-    margin 0
+    margin 0 0 13px
     
     li
       display inline-block
       margin-left 48px
       
-      &:first-child
-        margin-left 0
-      
   & a&-phone
     font-size 12pt
     color #fe0e0e
     text-align right
-    margin-right 20px
-    
-    @media( max-width 700px )
-      display none
-    
-  &-socials
-    display flex
-    justify-content space-between
-    align-items center
-    margin-right 20px
-    
-    @media( max-width 700px )
-      display none
-  
-    &__item
-      height 20px
-      margin-right 5px
-      
-      &:last-child
-        margin-right 0
-      
-    svg
-      display inline-block
-      vertical-align top
-      
           
   &-nav.b-menu-icon
     cursor pointer
         
   .b-header-logo
+    padding-top 6px
   
     img
       vertical-align top
-      width 255px
-      height 38px
+      width 101px
+      height 51px
       
       @media( max-width 600px )
-        width 205px
-        height 31px
+        width 72px
+        height 37px
       
 .b-menu-icon
-  display inline-block
+  display none
   vertical-align top
-  width 20px
-  height 20px
+  width 32px
+  height 32px
+  background embedurl( 'img/menu.svg' ) no-repeat center center
+  background-size cover
   
-  svg
-    width 20px
-    height 20px
+  @media( max-width 600px )
+    display inline-block
   
 #slide-out
   padding-top 25px
@@ -112,11 +76,11 @@
     color #fe0e0e
     
 .b-page
-  padding-top 98px
+  padding-top 120px
   min-height calc( 100vh - 80px )
   
   @media( max-width 600px )
-    padding-top 81px
+    padding-top 90px
     
 .b-footer
   font-size 9pt

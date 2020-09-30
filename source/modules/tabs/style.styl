@@ -5,27 +5,31 @@
   &__nav
     margin-bottom 52px
     
-    @media( max-width 767px )
-      display flex
-      justify-content space-between
-    
     a
       margin-right 45px
       font-size 12pt
       font-weight bold
       white-space nowrap
+      color #333
       
       @media( max-width 767px )
         font-size 8pt
         margin-right 0
+        margin-bottom 5px
+        display block
       
       &:last-child
         margin-right 0
         
       &.i-active
-        color #333
+        color #f33
         cursor default
         pointer-events none
+        
+  &__content
+    
+    @media( max-width 767px )
+      overflow hidden
         
   &__item
     font-size 13.5pt

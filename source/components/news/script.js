@@ -4,7 +4,7 @@
   
   $( function() {
     
-    $( '.b-news__bg' ).lazyload();
+    //$( '.b-news__bg' ).lazyload();
     
   });
 
